@@ -1,0 +1,299 @@
+body {
+    background-image: url(img/fond.svg);
+    font-family: "open sans";
+}
+
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px;
+    text-transform: uppercase;
+
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    font-family: "luckiest guy";
+    font-size: 20px;
+    color: rgb(94, 92, 92);
+
+}
+
+.logo img {
+    /* transform: scale(1.3);*/
+    width: 40px;
+    height: 30px;
+}
+
+.microphone:hover {
+    transform: scale(1.3);
+
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    display: flex;
+}
+
+nav ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin: 0 40px;
+    color: rgb(255, 165, 0);
+    text-transform: uppercase;
+    font-family: "luckiest guy";
+    gap: 10px;
+}
+
+.accueil {
+    width: 100%;
+    height: auto;
+    background-image: url(img/fond.gif);
+    padding: 100px;
+    color: rgb(240, 248, 255);
+    text-align: center;
+}
+
+.button {
+    background: rgb(255, 127, 80);
+    font-size: 20px;
+    /* Adjust the font size as needed */
+    padding: 10px 20px;
+    /* Adjust the padding as needed */
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.titre:before,
+.titre:after {
+    content: "**";
+}
+
+.titre {
+    text-transform: uppercase;
+}
+
+.hTitre {
+    color: rgb(94, 92, 92);
+}
+
+#rappeurs {
+    text-align: center;
+    margin:20px 100px;
+}
+
+.rappeurs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    padding: 40px;
+}
+
+#rappeurs .rappeurs div {
+    margin-right: 50px;
+}
+
+#rappeurs .rappeurs div:last-child {
+    margin-right: 0;
+}
+
+.rappeurImage{
+    width:300px;
+    height:400px;
+}
+.separator {
+    width: 100%;
+    margin: 10px auto;
+    border: none;
+    border-top: 8px solid #2e2d2d;
+    /* Adjust the color and style as needed */
+}
+
+.name {
+    color: rgb(255, 165, 0);
+    text-transform: uppercase;
+    font-family: "luckiest guy";
+    margin-top: 20px;
+}
+
+#playlists {
+    text-align: center;
+    margin:10px 100px;
+}
+
+.playlists i.fa-gray {
+    color: gray;
+    /* 将带有 fa-gray 类的图标颜色设为灰色 */
+}
+
+.playlists {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+    margin: 10px;
+}
+
+#playlists .playlists div {
+    margin-right: 30px;
+    padding: 20px;
+
+}
+
+#playlists .playlists div:last-child {
+    margin-right: 0;
+}
+
+.sujet {
+    color: rgb(255, 165, 0);
+    text-transform: uppercase;
+    font-family: "luckiest guy";
+}
+
+button.partage {
+    font-size: 20px;
+    /* Adjust the font size as needed */
+    padding: 10px 20px;
+    /* Adjust the padding as needed */
+    background: rgb(94, 92, 92);
+    border-radius: 15px;
+    display: inline-block;
+    color: rgb(240, 248, 255);
+}
+
+.left-align {
+    text-align: left;
+}
+
+button.partage i {
+    margin-left: 5px;
+    /* Adjust the margin as needed */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    text-align: left;
+}
+
+.container h2 {
+    text-align: center;
+}
+
+article {
+    padding-bottom: 20px;
+    padding: 40px;
+}
+
+article:nth-child(odd) img {
+    float: right;
+    width: 500px;
+    height: 500px;
+}
+
+article:nth-child(even) img {
+    float: left;
+    width: 500px;
+    height: 500px;
+}
+
+#contact {
+    margin-top: 40px;
+    text-align: center;
+    padding: 80px;
+}
+
+h1,
+h2 {
+    font-family: "luckiest guy";
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+}
+.contactText {
+    margin-top:20px;
+    padding:20px;
+}
+#votreNom {
+    display: flex;
+    background-image: url(img/bg_form_name.svg);
+    background-size: 15%;
+    background-repeat: no-repeat;
+    background-position: left;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+#votreNom::placeholder {
+    color: #999;
+}
+
+#votreEmail {
+    background-image: url(img/bg_form_mail.svg);
+    background-size: 15%;
+    background-repeat: no-repeat;
+    background-position: left;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+#votreMessage {
+    background-image: url(img/bg_form_message.svg);
+    background-size: 15%;
+    background-repeat: no-repeat;
+    background-position: left;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.message {
+    margin-top: 20px;
+}
+
+.success {
+    margin-top: 40px;
+    font-size: 12px;
+    /* Adjust the font size as needed */
+    padding: 10px;
+    /* Adjust the padding as needed */
+    background: rgb(49, 49, 210);
+    margin-right: 10px;
+    color: rgb(240, 248, 255);
+}
+
+.supprimer {
+    margin-top: 40px;
+    font-size: 12px;
+    /* Adjust the font size as needed */
+    padding: 10px;
+    /* Adjust the padding as needed */
+    background: rgb(94, 92, 92);
+    margin-right: 10px;
+    color: rgb(240, 248, 255);
+}
+
+footer {
+    background: rgb(94, 92, 92);
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+.schoolName {
+    text-transform: uppercase;
+    color: rgb(26, 109, 109);
+}
